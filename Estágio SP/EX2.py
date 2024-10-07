@@ -12,8 +12,6 @@ fibonacci = [0,1]
 
 if valor <= 0:
     print("Digite apenas números positivos.")
-elif valor == 1:
-    print(n1)
 else:
     while contador < valor:
         n3 = n1 + n2

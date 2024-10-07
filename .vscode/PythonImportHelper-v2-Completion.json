@@ -1,0 +1,101 @@
+[
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "n1",
+        "kind": 5,
+        "importPath": "Estágio SP.EX2",
+        "description": "Estágio SP.EX2",
+        "peekOfCode": "n1 = 0\nn2 = 1\ncontador = 0\nfibonacci = [0,1]\nif valor <= 0:\n    print(\"Digite apenas números positivos.\")\nelse:\n    while contador < valor:\n        n3 = n1 + n2\n        fibonacci.append(n3)",
+        "detail": "Estágio SP.EX2",
+        "documentation": {}
+    },
+    {
+        "label": "n2",
+        "kind": 5,
+        "importPath": "Estágio SP.EX2",
+        "description": "Estágio SP.EX2",
+        "peekOfCode": "n2 = 1\ncontador = 0\nfibonacci = [0,1]\nif valor <= 0:\n    print(\"Digite apenas números positivos.\")\nelse:\n    while contador < valor:\n        n3 = n1 + n2\n        fibonacci.append(n3)\n        n1 = n2",
+        "detail": "Estágio SP.EX2",
+        "documentation": {}
+    },
+    {
+        "label": "contador",
+        "kind": 5,
+        "importPath": "Estágio SP.EX2",
+        "description": "Estágio SP.EX2",
+        "peekOfCode": "contador = 0\nfibonacci = [0,1]\nif valor <= 0:\n    print(\"Digite apenas números positivos.\")\nelse:\n    while contador < valor:\n        n3 = n1 + n2\n        fibonacci.append(n3)\n        n1 = n2\n        n2 = n3",
+        "detail": "Estágio SP.EX2",
+        "documentation": {}
+    },
+    {
+        "label": "fibonacci",
+        "kind": 5,
+        "importPath": "Estágio SP.EX2",
+        "description": "Estágio SP.EX2",
+        "peekOfCode": "fibonacci = [0,1]\nif valor <= 0:\n    print(\"Digite apenas números positivos.\")\nelse:\n    while contador < valor:\n        n3 = n1 + n2\n        fibonacci.append(n3)\n        n1 = n2\n        n2 = n3\n        contador += 1",
+        "detail": "Estágio SP.EX2",
+        "documentation": {}
+    },
+    {
+        "label": "calcular_faturamento",
+        "kind": 2,
+        "importPath": "Estágio SP.EX3",
+        "description": "Estágio SP.EX3",
+        "peekOfCode": "def calcular_faturamento():\n    with open('faturamento.json', 'r') as file:\n        faturamento_diario = json.load(file)\n    faturamento_validos = [dia[\"faturamento\"] for dia in faturamento_diario if dia[\"faturamento\"] > 0]\n    if not faturamento_validos:\n        print(\"Não há dados de faturamento para calcular.\")\n        return\n    menor_faturamento = min(faturamento_validos)\n    maior_faturamento = max(faturamento_validos)\n    media_mensal = sum(faturamento_validos) / len(faturamento_validos)",
+        "detail": "Estágio SP.EX3",
+        "documentation": {}
+    },
+    {
+        "label": "faturamento_estados",
+        "kind": 5,
+        "importPath": "Estágio SP.EX4",
+        "description": "Estágio SP.EX4",
+        "peekOfCode": "faturamento_estados = {\n    'SP': 67836.43,\n    'RJ': 36678.66,\n    'MG': 29229.88,\n    'ES': 27165.48,\n    'Outros': 19849.53\n}\nfaturamento_total = sum(faturamento_estados.values())\npercentuais = {estado: (valor / faturamento_total) * 100 for estado, valor in faturamento_estados.items()}\nfor estado, percentual in percentuais.items():",
+        "detail": "Estágio SP.EX4",
+        "documentation": {}
+    },
+    {
+        "label": "faturamento_total",
+        "kind": 5,
+        "importPath": "Estágio SP.EX4",
+        "description": "Estágio SP.EX4",
+        "peekOfCode": "faturamento_total = sum(faturamento_estados.values())\npercentuais = {estado: (valor / faturamento_total) * 100 for estado, valor in faturamento_estados.items()}\nfor estado, percentual in percentuais.items():\n    print(f'{estado}: {percentual:.2f}%')",
+        "detail": "Estágio SP.EX4",
+        "documentation": {}
+    },
+    {
+        "label": "percentuais",
+        "kind": 5,
+        "importPath": "Estágio SP.EX4",
+        "description": "Estágio SP.EX4",
+        "peekOfCode": "percentuais = {estado: (valor / faturamento_total) * 100 for estado, valor in faturamento_estados.items()}\nfor estado, percentual in percentuais.items():\n    print(f'{estado}: {percentual:.2f}%')",
+        "detail": "Estágio SP.EX4",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 5,
+        "importPath": "Estágio SP.EX5",
+        "description": "Estágio SP.EX5",
+        "peekOfCode": "string = \"Texto\"\nstring_invertida = \"\"\nfor i in range(len(string)-1, -1, -1):\n    string_invertida += string[i]\nprint(f'String original: {string}')\nprint(f'String invertida: {string_invertida}')",
+        "detail": "Estágio SP.EX5",
+        "documentation": {}
+    },
+    {
+        "label": "string_invertida",
+        "kind": 5,
+        "importPath": "Estágio SP.EX5",
+        "description": "Estágio SP.EX5",
+        "peekOfCode": "string_invertida = \"\"\nfor i in range(len(string)-1, -1, -1):\n    string_invertida += string[i]\nprint(f'String original: {string}')\nprint(f'String invertida: {string_invertida}')",
+        "detail": "Estágio SP.EX5",
+        "documentation": {}
+    }
+]
